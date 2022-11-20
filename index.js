@@ -9,12 +9,6 @@ function getSteps(){
     for(let i = 0; i < files.length; i++){
         steps.push(files[i].slice(0,-4));
     }
-    
-//    for(let i = 0; i < files.length; i++){
-//        if(files[i].slice(0,5) == "after"){
-//            steps.push(files[i].slice(6).slice(0, -4));
-//        }
-//    }
 }
 
 async function executeComparison(){
@@ -33,13 +27,50 @@ async function executeComparison(){
                 diffBounds: data.diffBounds,
                 analysisTime: data.analysisTime
             }
-            fs.writeFileSync(`./final-results/compare-${steps[i]}.png`, data.getBuffer());
+            fs.writeFileSync(`./final-results/${steps[i]}.png`, data.getBuffer());
         }
     console.log('------------------------------------------------------------------------------------')
     console.log("Execution finished. Check the report under the results folder")
     return resultInfo;
 }
 
+function comparisonsHTML(){
+    folders.push("final-results");
+    result = "";
+    for(let i = 0; i < steps.length; i++){
+        result+=(`<div id="comparison-${steps[i]}">
+        <div id = "first">
+            <img class="img2" src="./first-results/${steps[i]}.png" id="firstImage" label="Primera prueba ejecutada">
+        </div>
+        <div id = "second">
+            <img class="img2" src="./second-results/${steps[i]}.png" id="secondImage" label="Segunda prueba ejecutada">
+        </div>
+        <div id = "final">
+            <img class="img2" src="./final-results/${steps[i]}.png" id="finalImage" label="Comparación entre ambas pruebas">
+        </div>`);
+    }
+    return result;
+}
 
+function createReport(){
+    comparisons = comparisonsHTML();
+    reportHTML = `<html>
+    <head>
+        <title> Reporte de Pruebas de Regresión Visual </title>
+        <link href="index.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        ${comparisons}
+    </body>
+</html>`;
+    fs.writeFileSync(`report.html`, reportHTML);
+}
+
+// Obtain steps to compare
 getSteps();
+
+// Execute comparison
 (async ()=>console.log(await executeComparison()))();
+
+// Create HTML report
+(async ()=>createReport(await executeComparison()))();
