@@ -8,4 +8,6 @@ Este es un script de creación de reportes de regresión visual para la clase MI
 * Verifique que un archivo de captura para cada paso de la prueba existe en **ambas** carpetas.
 * Corra el comando `node index.js` en la consola.
 
-*Note que el repositorio incluye imágenes pre-existentes para probar el script. Elimínelas si no desea que aparezcan en su reporte.*
+## Para tener en cuenta
+*El repositorio incluye imágenes pre-existentes para probar el script. Elimínelas si no desea que aparezcan en su reporte.
+*El código del repositorio sobreescribe los archivos de comparación y el archivo `report.html` cada vez que se ejecuta el código.
