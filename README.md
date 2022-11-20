@@ -9,5 +9,5 @@ Este es un script de creación de reportes de regresión visual para la clase MI
 * Corra el comando `node index.js` en la consola.
 
 ## Para tener en cuenta
-*El repositorio incluye imágenes pre-existentes para probar el script. Elimínelas si no desea que aparezcan en su reporte.
-*El código del repositorio sobreescribe los archivos de comparación y el archivo `report.html` cada vez que se ejecuta el código.
+* El repositorio incluye imágenes pre-existentes para probar el script. Elimínelas si no desea que aparezcan en su reporte.
+* El código del repositorio sobreescribe los archivos de comparación y el archivo `report.html` cada vez que se ejecuta el código.
