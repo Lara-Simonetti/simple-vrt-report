@@ -1,12 +1,12 @@
 # Script-Reporte-MISW4103
 Este es un script de creación de reportes de regresión visual para la clase MISW4103.
 
-## Para correr el script
-* Verifique que todas las dependencias estén instaladas.
-* Verifique que las capturas a evaluar estén en las carpetas `first-results` y `second-results`.
-* Verifique que la captura de cada paso en ambas carpetas tiene el mismo nombre.
-* Verifique que un archivo de captura para cada paso de la prueba existe en **ambas** carpetas.
-* Corra el comando `node index.js` en la consola.
+## Pasos para correr el script
+1. Verifique que todas las dependencias estén instaladas.
+2. Verifique que las capturas a evaluar estén en las carpetas `first-results` y `second-results`.
+3. Verifique que la captura de cada paso en ambas carpetas tiene el mismo nombre.
+4. Verifique que un archivo de captura para cada paso de la prueba existe en **ambas** carpetas.
+5. Corra el comando `node index.js` en la consola.
 
 ## Para tener en cuenta
 * El repositorio incluye imágenes pre-existentes para probar el script. Elimínelas si no desea que aparezcan en su reporte.
