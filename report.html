@@ -1,27 +1,48 @@
 <html>
     <head>
         <title> Reporte de Pruebas de Regresión Visual </title>
-        <link href="index.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
+    <div class = "container">
+        <h1>Reporte de Pruebas de Regresión Visual</h1>
+        <h2><small class="text-muted">Generado: 11/20/2022, 12:52:41 AM</small></h2>
+        <hr>
+    </div>
     <body>
-        <div id="comparison-cat">
-        <div id = "first">
-            <img class="img2" src="./first-results/cat.png" id="firstImage" label="Primera prueba ejecutada">
-        </div>
-        <div id = "second">
-            <img class="img2" src="./second-results/cat.png" id="secondImage" label="Segunda prueba ejecutada">
-        </div>
-        <div id = "final">
-            <img class="img2" src="./final-results/cat.png" id="finalImage" label="Comparación entre ambas pruebas">
-        </div><div id="comparison-rabbit">
-        <div id = "first">
-            <img class="img2" src="./first-results/rabbit.png" id="firstImage" label="Primera prueba ejecutada">
-        </div>
-        <div id = "second">
-            <img class="img2" src="./second-results/rabbit.png" id="secondImage" label="Segunda prueba ejecutada">
-        </div>
-        <div id = "final">
-            <img class="img2" src="./final-results/rabbit.png" id="finalImage" label="Comparación entre ambas pruebas">
-        </div>
+        <div id="comparison-cat" class="container">
+    <h2>Regresión visual: cat</h2>
+    <hr>
+        <div class = "row">
+                <div id = "first" class="col-md-4">
+                    <h3><small class="text-muted">Primera prueba ejecutada</small></h3>
+                    <img class="img-fluid" src="./first-results/cat.png" id="firstImage" label="Primera prueba ejecutada">
+                </div>
+                <div id = "second" class="col-md-4">
+                    <h3><small class="text-muted">Segunda prueba ejecutada</small></h3>
+                    <img class="img-fluid" src="./second-results/cat.png" id="secondImage" label="Segunda prueba ejecutada">
+                </div>
+                <div id = "final" class="col-md-4">
+                    <h3><small class="text-muted">Comparación</small></h3>
+                    <img class="img-fluid" src="./final-results/cat.png" id="finalImage" label="Comparación entre ambas pruebas">
+                </div>
+            </div>
+    </div><div id="comparison-rabbit" class="container">
+    <h2>Regresión visual: rabbit</h2>
+    <hr>
+        <div class = "row">
+                <div id = "first" class="col-md-4">
+                    <h3><small class="text-muted">Primera prueba ejecutada</small></h3>
+                    <img class="img-fluid" src="./first-results/rabbit.png" id="firstImage" label="Primera prueba ejecutada">
+                </div>
+                <div id = "second" class="col-md-4">
+                    <h3><small class="text-muted">Segunda prueba ejecutada</small></h3>
+                    <img class="img-fluid" src="./second-results/rabbit.png" id="secondImage" label="Segunda prueba ejecutada">
+                </div>
+                <div id = "final" class="col-md-4">
+                    <h3><small class="text-muted">Comparación</small></h3>
+                    <img class="img-fluid" src="./final-results/rabbit.png" id="finalImage" label="Comparación entre ambas pruebas">
+                </div>
+            </div>
+    </div>
     </body>
 </html>
