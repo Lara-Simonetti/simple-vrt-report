@@ -39,22 +39,22 @@ function comparisonsHTML(){
     result = "";
     for(let i = 0; i < steps.length; i++){
         result+=(`<div id="comparison-${steps[i]}" class="container">
-    <h2>Regresión visual: ${steps[i]}</h2>
-    <hr>
+    <h2 class="mt-2 mb-3">Regresión visual: ${steps[i]}</h2>
         <div class = "row">
                 <div id = "first" class="col-md-4">
-                    <h3><small class="text-muted">Primera prueba ejecutada</small></h3>
+                    <h3 class="mt-2 mb-3"><small class="text-muted">Primera prueba ejecutada</small></h3>
                     <img class="img-fluid" src="./first-results/${steps[i]}.png" id="firstImage" label="Primera prueba ejecutada">
                 </div>
                 <div id = "second" class="col-md-4">
-                    <h3><small class="text-muted">Segunda prueba ejecutada</small></h3>
+                    <h3 class="mt-2 mb-3"><small class="text-muted">Segunda prueba ejecutada</small></h3>
                     <img class="img-fluid" src="./second-results/${steps[i]}.png" id="secondImage" label="Segunda prueba ejecutada">
                 </div>
                 <div id = "final" class="col-md-4">
-                    <h3><small class="text-muted">Comparación</small></h3>
+                    <h3 class="mt-2 mb-3"><small class="text-muted">Comparación</small></h3>
                     <img class="img-fluid" src="./final-results/${steps[i]}.png" id="finalImage" label="Comparación entre ambas pruebas">
                 </div>
             </div>
+            <hr>
     </div>`);
     }
     return result;
