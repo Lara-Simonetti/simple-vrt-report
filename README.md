@@ -1,5 +1,5 @@
 # Simple VRT Report
-This script generates a simple visual regression testing report as an HTML document.
+This script generates a simple visual regression testing report as an HTML document. It uses [ResembleJS](https://github.com/rsmbl/Resemble.js) to compare images, and [Bootstrap](https://github.com/twbs/bootstrap) for the document styles.
 
 ## How to Run
 1. Clone the repository.
