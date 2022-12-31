@@ -1,14 +1,12 @@
-# Script-Reporte-MISW4103
-Este es un script de creación de reportes de regresión visual para la clase MISW4103.
+# Simple VRT Report
+This script generates a simple visual regression testing report as an HTML document.
 
-## Pasos para correr el script
-1. Verifique que todas las dependencias estén instaladas.
-2. Verifique que las capturas a evaluar estén en las carpetas `first-results` y `second-results`.
-3. Verifique que todos los archivos de captura son en formato `.png`.
-4. Verifique que la captura de cada paso en ambas carpetas tiene el mismo nombre.
-5. Verifique que un archivo de captura para cada paso de la prueba existe en **ambas** carpetas.
-6. Corra el comando `node index.js` en la consola.
+## How to Run
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Confirm the images for each step to compare have the same file name and are a `.png` file type.
+4. Add the images from the first execution to the `first-results` folder.
+5. Add the images from the second execution to the `second-results` folder.
+6. Run with `node index.js.`
 
-## Para tener en cuenta
-* El repositorio incluye imágenes pre-existentes para probar el script. Elimínelas si no desea que aparezcan en su reporte.
-* El código del repositorio sobreescribe los archivos de comparación y el archivo `report.html` cada vez que se ejecuta el código.
+This script will override the report.html file each time it is executed!
