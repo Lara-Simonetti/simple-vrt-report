@@ -10,3 +10,9 @@ This script generates a simple visual regression testing report in HTML format. 
 6. Run with `node index.js.`
 
 This script will override the report.html file each time it is executed!
+
+## Technical Features
+These are some of the skills displayed in this project:
+* JavaScript
+* HTML, CSS, and Bootstrap
+* ResembleJS
